@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bianco">#FFFFFF</color>
+    <color name="nero">#000000</color>
+    <color name="rosso">#FF0000</color>
+
+    <!--MAIN ACTIVITY-
+    FRAME CONTAINER -->
+    <color name="main_activity_framelayout_background">#e0e0e0</color>
+
+    <!--ACTIVITY RESULT -->
+    <color name="activity_result_background">#4fc3f7</color>
+    <color name="activity_result_text">#ba000d</color>
+
+    <!--MAIN ACTIVITY-
+    NAVIGATION VIEW -->
+    <color name="main_activity_navigationview_background">@color/nero</color>
+    <color name="main_activity_navigationview_description_text">@color/bianco</color>
+    <color name="main_activity_navigationview_description_text_shadow_color">#ff3d00</color>
+
+    <!--ACTION BAR COLORS-->
+    <color name="actionbar_text">#FFFFFF</color>
+    <color name="action_bar_background">#000000</color>
+
+    <!--STATUS BAR-->
+    <color name="status_bar_background">#0277bd</color>
+    <!--MENU-->
+    <color name="menu_label_color">@color/nero</color>
+    <color name="menu_row_background">#e0e0e0</color>
+    <color name="menu_row_background_pressed">#e0e0e0</color>
+
+
+    <!--MOTION CURVE-->
+    <color name="square_motion_background">#ff9100</color>
+
+    <!--STATE CHANGE ANIMATION FRAGMENT-->
+    <color name="state_change_text_color">@color/nero</color>
+</resources>
+

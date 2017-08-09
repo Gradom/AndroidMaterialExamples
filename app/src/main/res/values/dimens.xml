@@ -1,0 +1,10 @@
+<resources>
+
+    <!--NAVIGATION VIEW-->
+    <dimen name="navigation_view_header_height">192dp</dimen>
+
+    <!--MENU-->
+    <dimen name="menu_row_margin">5dp</dimen>
+    <dimen name="menu_row_stroke">0.5dp</dimen>
+    <dimen name="menu_row_corners">10dp</dimen>
+</resources>

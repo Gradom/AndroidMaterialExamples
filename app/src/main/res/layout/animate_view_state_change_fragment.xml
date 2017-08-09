@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/state_change_intro"
+        android:textColor="@color/state_change_text_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="@string/state_change_z_transition_text"
+            android:textColor="@color/state_change_text_color" />
+
+        <Button
+            android:id="@+id/state_change_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z transition" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="@string/state_change_x_transition_text"
+            android:textColor="@color/state_change_text_color" />
+
+        <Button
+            android:id="@+id/X_transition_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X transition" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="@string/state_change_x_transition_text"
+            android:textColor="@color/state_change_text_color" />
+
+        <Button
+            android:id="@+id/X_transition_button_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X transition left" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="@string/state_change_rotation_text"
+            android:textColor="@color/state_change_text_color" />
+
+        <Button
+            android:id="@+id/z_elevation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X rotation" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="TO BE CONTINUED...."
+        android:textColor="@color/state_change_text_color" />
+</LinearLayout>

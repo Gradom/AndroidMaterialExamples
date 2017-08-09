@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">My Applications</string>
+
+
+    <!--BUTTON TEXT FRAGMENT-->
+    <string name="button_text_fragment_button">Cliccami !!!</string>
+    <string name="button_text_fragment_text">Le Transizioni sono incredibili !!!</string>
+
+    <!--TRANSITION ACTIVITY FRAGMENT-->
+    <string name="activity_transition_fragment_button">Nuova activity</string>
+    <string name="activity_transition_fragment_button_shared">Nuova activity \n condividi elemento</string>
+    <!--MENU-DRAWER-NAVIGATIONVIEW-->
+    <string name="drawer_open">Drawer aperto</string>
+    <string name="drawer_close">Drawer chiuso</string>
+    <string name="main_activity_navigationview_description_text">Scegli una opzione per visualizzarla</string>
+    <string name="main_activity_navigationview_material_design">Material Design</string>
+    <string name="main_activity_navigationview_android">A N D R O I D</string>
+
+
+    <!--CARD VIEW -->
+    <string name="card_view_text">Questa è una card view</string>
+    <string name="fragment_card_description">Nuovo tipo di layout Android detta \"Card\" che permette di rappresentare dati e immagini in forma geometrica con elevazione ( ombra ). Si può ovviamente legare un \"Click\" per entrare nei dettagli</string>
+
+
+    <!--STATE CHANGE ANIMATION-->
+    <string name="state_change_intro">Effetti grafici applicabili alle view, sono completamente custom e dipendendi dallo stato della view ( pressato, focused, abilitato ). Esempi usati sui button:</string>
+    <string name="state_change_z_transition_text">Quando pressato, viene applicata una elevation; quando rilasciato, il bottone torna allo stato iniziale</string>
+    <string name="state_change_rotation_text">Quando pressato, viene applicata una rotazione; quando rilasciato, il bottone torna allo stato iniziale</string>
+    <string name="state_change_x_transition_text">Quando pressato, viene applicata un movimento verso destra lungo l\'asse X; quando rilasciato, il bottone torna allo stato iniziale</string>
+
+
+    <!--EDIT TEXT ANIMATION-->
+    <string name="edit_text_animation_name">Inserisci il nome</string>
+    <string name="edit_text_animation_cognme">Inserisci il cognome</string>
+    <string name="edit_text_animation_nick">Inserisci nick</string>
+    <string name="edit_text_animation_data">Inserisci data di nascita</string>
+
+</resources>
