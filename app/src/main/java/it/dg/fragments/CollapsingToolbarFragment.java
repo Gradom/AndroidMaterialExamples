@@ -30,9 +30,7 @@ public class CollapsingToolbarFragment extends Fragment {
     private void xmlReferences() {
         collapsingToolbarLayout = (CollapsingToolbarLayout) view.findViewById(R.id.collapsing_toolbar);
         collapsingToolbarLayout.setTitle("Titolo");
-        collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
         collapsingToolbarLayout.setContentScrimColor(getResources().getColor(R.color.rosso));
-        collapsingToolbarLayout.setStatusBarScrimColor(getResources().getColor(R.color.square_motion_background));
     }
 
 }

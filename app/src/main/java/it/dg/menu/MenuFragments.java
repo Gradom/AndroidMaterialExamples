@@ -13,6 +13,7 @@ import it.dg.fragments.CollapsingToolbarFragment;
 import it.dg.fragments.CurvedMotionFragment;
 import it.dg.fragments.EditTextTransitionFargment;
 import it.dg.fragments.IntroFragment;
+import it.dg.fragments.ParallaxFragment;
 
 /**
  * Created by Domenico Grasso on 01/08/2017
@@ -41,6 +42,7 @@ public class MenuFragments {
         fragmentsList.add(new MenuItem("Animate View State Changes", new AnimateViewStateChangesFragment()));
         fragmentsList.add(new MenuItem("Edit Text Transition", new EditTextTransitionFargment()));
         fragmentsList.add(new MenuItem("Collapsing toolbar", new CollapsingToolbarFragment()));
+        fragmentsList.add(new MenuItem("parallax fragment", new ParallaxFragment()));
     }
 
     public List<MenuItem> getAllMenuItems() {
