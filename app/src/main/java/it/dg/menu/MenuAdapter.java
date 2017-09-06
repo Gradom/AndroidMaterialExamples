@@ -16,7 +16,7 @@ import it.dg.R;
 public class MenuAdapter extends RecyclerView.Adapter<MenuHolder> {
 
     private List<MenuItem> listaVociMenu;
-    static RecyclerViewListener listener;
+    private static RecyclerViewListener listener;
 
     public MenuAdapter(List<MenuItem> listaVociMenu, RecyclerViewListener listener) {
         this.listaVociMenu = listaVociMenu;
@@ -39,6 +39,11 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuHolder> {
                 listener.itemSelected(v, item, position);
             }
         });
+    }
+
+    public void updateList(List<MenuItem> listaVociMenu) {
+        this.listaVociMenu = listaVociMenu;
+        notifyDataSetChanged();
     }
 
     @Override

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
 import android.graphics.drawable.Drawable;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
@@ -11,7 +12,7 @@ import android.widget.ImageView;
  * Created by Domenico Grasso on 10/08/2017
  */
 
-public class ParallaxImageView extends android.support.v7.widget.AppCompatImageView {
+public class ParallaxImageView extends AppCompatImageView {
 
     private float parallaxRatio = 1.2f;
     private boolean needToTranslate = true;

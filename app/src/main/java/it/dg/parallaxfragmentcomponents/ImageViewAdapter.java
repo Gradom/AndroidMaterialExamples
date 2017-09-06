@@ -18,12 +18,10 @@ import it.dg.parallax.ParallaxHolder;
 
 public class ImageViewAdapter extends RecyclerView.Adapter<ImageViewAdapter.ImageViewHolder> {
 
-    private Context context;
     private LayoutInflater inflater;
     private Drawable image1;
 
     public ImageViewAdapter(Context context) {
-        this.context = context;
         this.inflater = LayoutInflater.from(context);
         image1 = ContextCompat.getDrawable(context, R.drawable.test_image_1);
     }

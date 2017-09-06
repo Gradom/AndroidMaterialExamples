@@ -1,6 +1,5 @@
 package it.dg.fragments;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
@@ -27,22 +26,11 @@ public class ParallaxFragment extends Fragment {
     public ParallaxFragment() {
     }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        this.context = context;
-    }
-
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        this.context = activity;
-    }
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.parallax_fragment, container, false);
+        context = container.getContext();
         xmlReferences();
         return view;
     }
