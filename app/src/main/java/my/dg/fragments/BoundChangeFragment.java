@@ -1,4 +1,4 @@
-package it.dg.fragments;
+package my.dg.fragments;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.LinearLayout;
 
-import it.dg.R;
+import my.dg.R;
 
 /**
  * Created by Domenico Grasso on 06/09/2017

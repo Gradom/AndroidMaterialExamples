@@ -1,4 +1,4 @@
-package it.dg.fragments;
+package my.dg.fragments;
 
 import android.app.Fragment;
 import android.os.Build;
@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import it.dg.R;
+import my.dg.R;
 
 /**
  * Created by Domenico Grasso on 01/08/2017

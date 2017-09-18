@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <it.dg.parallax.ParallaxRecycleView
+    <my.dg.parallax.ParallaxRecycleView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

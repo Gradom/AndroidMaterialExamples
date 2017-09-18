@@ -1,21 +1,21 @@
-package it.dg.menu;
+package my.dg.menu;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-import it.dg.fragments.ActivityTransitionFragment;
-import it.dg.fragments.AnimateViewStateChangesFragment;
-import it.dg.fragments.BoundChangeFragment;
-import it.dg.fragments.ButtonTextFragment;
-import it.dg.fragments.CardsFragment;
-import it.dg.fragments.CircularAnimationFragment;
-import it.dg.fragments.CollapsingToolbarFragment;
-import it.dg.fragments.CurvedMotionFragment;
-import it.dg.fragments.EditTextTransitionFargment;
-import it.dg.fragments.IntroFragment;
-import it.dg.fragments.ParallaxFragment;
-import it.dg.fragments.BlurFragment;
+import my.dg.fragments.ActivityTransitionFragment;
+import my.dg.fragments.AnimateViewStateChangesFragment;
+import my.dg.fragments.BoundChangeFragment;
+import my.dg.fragments.ButtonTextFragment;
+import my.dg.fragments.CardsFragment;
+import my.dg.fragments.CircularAnimationFragment;
+import my.dg.fragments.CollapsingToolbarFragment;
+import my.dg.fragments.CurvedMotionFragment;
+import my.dg.fragments.EditTextTransitionFargment;
+import my.dg.fragments.IntroFragment;
+import my.dg.fragments.ParallaxFragment;
+import my.dg.fragments.BlurFragment;
 
 /**
  * Created by Domenico Grasso on 01/08/2017

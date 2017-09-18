@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "129372307934",
-    "firebase_url": "https://myapplication-89.firebaseio.com",
-    "project_id": "myapplication-89",
-    "storage_bucket": "myapplication-89.appspot.com"
+    "project_number": "1070183381924",
+    "firebase_url": "https://my-application-al96so.firebaseio.com",
+    "project_id": "my-application-al96so",
+    "storage_bucket": "my-application-al96so.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:129372307934:android:b6568c459b4fb09b",
+        "mobilesdk_app_id": "1:1070183381924:android:9b90e22fcdbc209c",
         "android_client_info": {
-          "package_name": "it.dg"
+          "package_name": "my.dg"
         }
       },
       "oauth_client": [
         {
-          "client_id": "129372307934-j13nbrucl7uu4t7ousokm519vla47bml.apps.googleusercontent.com",
+          "client_id": "1070183381924-q6jh4jis2dcerr8mmg1n2g4gl066ds15.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "it.dg",
-            "certificate_hash": "248B8AA72D901D9AFE33363A982FB73C866714B1"
+            "package_name": "my.dg",
+            "certificate_hash": "248b8aa72d901d9afe33363a982fb73c866714b1"
           }
         },
         {
-          "client_id": "129372307934-uak9ocbisaecqphars0k3qh5148jilia.apps.googleusercontent.com",
+          "client_id": "1070183381924-gk8rhopk1v4smvbiscvr4072lg5uamo1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBemd4dOZDNALOczAtjUJDZaUVX1ByHaPo"
+          "current_key": "AIzaSyA0Qj_i2E3JHo37SzkkyO75SBIzQ0KLJD8"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "129372307934-uak9ocbisaecqphars0k3qh5148jilia.apps.googleusercontent.com",
+              "client_id": "1070183381924-gk8rhopk1v4smvbiscvr4072lg5uamo1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

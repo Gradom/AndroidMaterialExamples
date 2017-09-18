@@ -1,4 +1,4 @@
-package it.dg.menu;
+package my.dg.menu;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import it.dg.R;
+import my.dg.R;
 
 /**
  * Created by Domenico Grasso on 01/08/2017

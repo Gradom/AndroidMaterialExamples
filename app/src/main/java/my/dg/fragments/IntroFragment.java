@@ -1,4 +1,4 @@
-package it.dg.fragments;
+package my.dg.fragments;
 
 import android.app.Fragment;
 

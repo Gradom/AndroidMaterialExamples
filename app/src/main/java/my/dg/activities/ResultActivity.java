@@ -1,9 +1,9 @@
-package it.dg.activities;
+package my.dg.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import it.dg.R;
+import my.dg.R;
 
 public class ResultActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package it.dg.fragments;
+package my.dg.fragments;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -9,9 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import it.dg.R;
-import it.dg.parallax.ParallaxRecycleView;
-import it.dg.parallaxfragmentcomponents.ImageViewAdapter;
+import my.dg.R;
+import my.dg.parallax.ParallaxRecycleView;
+import my.dg.parallaxfragmentcomponents.ImageViewAdapter;
 
 /**
  * Created by Domenico Grasso on 09/08/2017

@@ -4,7 +4,7 @@
     android:layout_height="150dp"
     android:paddingBottom="10dp">
 
-    <it.dg.parallax.ParallaxImageView
+    <my.dg.parallax.ParallaxImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

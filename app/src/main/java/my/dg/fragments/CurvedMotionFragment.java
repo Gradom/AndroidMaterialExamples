@@ -1,4 +1,4 @@
-package it.dg.fragments;
+package my.dg.fragments;
 
 import android.animation.ObjectAnimator;
 import android.app.Fragment;
@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.view.animation.PathInterpolator;
 import android.widget.LinearLayout;
 
-import it.dg.R;
+import my.dg.R;
 
 /**
  * Created by Domenico Grasso on 03/08/2017

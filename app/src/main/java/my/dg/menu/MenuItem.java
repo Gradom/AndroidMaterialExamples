@@ -1,4 +1,4 @@
-package it.dg.menu;
+package my.dg.menu;
 
 import android.app.Fragment;
 

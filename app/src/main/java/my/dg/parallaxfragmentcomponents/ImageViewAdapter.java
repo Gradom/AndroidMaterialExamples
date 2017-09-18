@@ -1,4 +1,4 @@
-package it.dg.parallaxfragmentcomponents;
+package my.dg.parallaxfragmentcomponents;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import it.dg.R;
-import it.dg.parallax.ParallaxHolder;
+import my.dg.R;
+import my.dg.parallax.ParallaxHolder;
 
 /**
  * Created by Domenico Grasso on 10/08/2017

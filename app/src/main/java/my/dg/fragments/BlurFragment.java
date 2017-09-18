@@ -1,4 +1,4 @@
-package it.dg.fragments;
+package my.dg.fragments;
 
 import android.app.Fragment;
 import android.graphics.Bitmap;
@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 
-import it.dg.R;
+import my.dg.R;
 
 /**
  * Created by Domenico Grasso on 10/08/2017

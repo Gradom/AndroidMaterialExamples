@@ -1,4 +1,4 @@
-package it.dg.fragments;
+package my.dg.fragments;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -13,7 +13,7 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.ToggleButton;
 
-import it.dg.R;
+import my.dg.R;
 
 /**
  * Created by Domenico Grasso on 02/08/2017

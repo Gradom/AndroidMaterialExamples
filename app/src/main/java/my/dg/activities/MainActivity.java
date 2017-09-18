@@ -1,4 +1,4 @@
-package it.dg.activities;
+package my.dg.activities;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -14,17 +14,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 
-import it.dg.R;
-import it.dg.fragments.IntroFragment;
-import it.dg.menu.MenuAdapter;
-import it.dg.menu.MenuFragments;
-import it.dg.menu.RecyclerViewListener;
+import my.dg.R;
+import my.dg.fragments.IntroFragment;
+import my.dg.menu.MenuAdapter;
+import my.dg.menu.MenuFragments;
+import my.dg.menu.RecyclerViewListener;
 
 
 public class MainActivity extends AppCompatActivity implements RecyclerViewListener {
@@ -40,6 +41,12 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
+        if (getIntent().getExtras() != null) {
+            for (String key : getIntent().getExtras().keySet()) {
+                String value = getIntent().getExtras().getString(key);
+                Log.d("valoriIntent", "Key: " + key + " Value: " + value);
+            }
+        }
         xmlReferences();
         setupToolbar();
         setupDrawer();
@@ -129,7 +136,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewListe
 
 
     @Override
-    public void itemSelected(View view, it.dg.menu.MenuItem item, int position) {
+    public void itemSelected(View view, my.dg.menu.MenuItem item, int position) {
         drawerLayout.closeDrawers();
         if (item.getLabel().equals("Secondo livello")) {
             LayoutAnimationController  animation = AnimationUtils.loadLayoutAnimation(this, R.anim.recyclerview_layout_animation);

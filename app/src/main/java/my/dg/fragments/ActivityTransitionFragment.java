@@ -1,4 +1,4 @@
-package it.dg.fragments;
+package my.dg.fragments;
 
 import android.app.Activity;
 import android.app.ActivityOptions;
@@ -14,8 +14,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import it.dg.R;
-import it.dg.activities.ResultActivity;
+import my.dg.R;
+import my.dg.activities.ResultActivity;
 
 /**
  * Created by Domenico Grasso on 02/08/2017

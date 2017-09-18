@@ -1,4 +1,4 @@
-package it.dg.parallax;
+package my.dg.parallax;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
