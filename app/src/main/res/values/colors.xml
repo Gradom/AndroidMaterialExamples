@@ -33,6 +33,7 @@
     <!--MOTION CURVE-->
     <color name="square_motion_background">#ff9100</color>
 
+
     <!--STATE CHANGE ANIMATION FRAGMENT-->
     <color name="state_change_text_color">@color/nero</color>
 </resources>

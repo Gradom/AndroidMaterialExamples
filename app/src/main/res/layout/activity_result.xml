@@ -12,20 +12,4 @@
         android:scaleType="centerCrop"
         android:src="@mipmap/ic_launcher"
         android:transitionName="imageToShare" />
-
-
-    <!--<TextView-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:gravity="center"-->
-    <!--android:shadowColor="@color/bianco"-->
-    <!--android:shadowDx="1"-->
-    <!--android:padding="15dp"-->
-    <!--android:shadowDy="1"-->
-    <!--android:shadowRadius="3"-->
-    <!--android:text="COMPLIMENTI !!!"-->
-    <!--android:textColor="@color/activity_result_text"-->
-    <!--android:textSize="40sp" />-->
-
-
 </LinearLayout>

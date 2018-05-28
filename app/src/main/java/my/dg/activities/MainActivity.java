@@ -15,11 +15,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.AnimationUtils;
-import android.view.animation.LayoutAnimationController;
 
 import my.dg.R;
 import my.dg.fragments.IntroFragment;
@@ -88,15 +85,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewListe
     }
 
     private void setupDrawer() {
-        toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close) {
-            @Override
-            public void onDrawerClosed(View drawerView) {
-                super.onDrawerClosed(drawerView);
-                LayoutAnimationController  animation = AnimationUtils.loadLayoutAnimation(MainActivity.this, R.anim.recyclerview_layout_animation);
-                menuListItem.setLayoutAnimation(animation);
-                adapter.updateList(MenuFragments.getInstance().mainMenuFragments());
-            }
-        };
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close);
         drawerLayout.addDrawerListener(toggle);
     }
 
@@ -114,8 +103,6 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewListe
         menuListItem.setLayoutManager(mLayoutManager);
 
         adapter = new MenuAdapter(MenuFragments.getInstance().getAllMenuItems(), this);
-        LayoutAnimationController  animation = AnimationUtils.loadLayoutAnimation(this, R.anim.recyclerview_layout_animation);
-        menuListItem.setLayoutAnimation(animation);
         menuListItem.setAdapter(adapter);
     }
 
@@ -138,16 +125,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewListe
     @Override
     public void itemSelected(View view, my.dg.menu.MenuItem item, int position) {
         drawerLayout.closeDrawers();
-        if (item.getLabel().equals("Secondo livello")) {
-            LayoutAnimationController  animation = AnimationUtils.loadLayoutAnimation(this, R.anim.recyclerview_layout_animation);
-            menuListItem.setLayoutAnimation(animation);
-            adapter.updateList(MenuFragments.getInstance().SecondMenuFragments());
-            drawerLayout.openDrawer(Gravity.START);
-            return;
-        }
-        if (item != null) {
-            fragment = item.getFragment();
-        }
+        fragment = item.getFragment();
         loadFragment();
     }
 }

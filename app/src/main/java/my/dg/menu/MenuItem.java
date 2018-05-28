@@ -23,4 +23,5 @@ public class MenuItem {
     public Fragment getFragment() {
         return fragment;
     }
+
 }

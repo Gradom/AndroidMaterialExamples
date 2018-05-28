@@ -6,15 +6,19 @@
         <item name="android:textColorPrimary">@color/actionbar_text</item>
         <item name="android:windowBackground">@color/bianco</item>
         <item name="homeAsUpIndicator">@drawable/ic_action_name</item>
-
+        <item name="android:windowFullscreen">true</item>
     </style>
 
-    <style name="Widget.Design.TextInputLayout"  parent="@android:style/TextAppearance">
+    <style name="Widget.Design.TextInputLayout" parent="@android:style/TextAppearance">
         <item name="android:textColor">@color/nero</item>
         <item name="android:textSize">16sp</item>
         <item name="colorControlNormal">@color/nero</item>
         <item name="android:textColorHint">@color/nero</item>
         <item name="colorControlActivated">@color/nero</item>
         <item name="colorControlHighlight">@color/nero</item>
+    </style>
+
+    <style name="dialog_animation_entering">
+        <item name="android:windowEnterAnimation">@anim/dialog_popup_message</item>
     </style>
 </resources>

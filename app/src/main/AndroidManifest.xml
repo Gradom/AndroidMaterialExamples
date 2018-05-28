@@ -22,14 +22,15 @@
             </intent-filter>
         </service>
 
-        <activity android:name="my.dg.activities.MainActivity">
+        <activity
+            android:name=".activities.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name="my.dg.activities.ResultActivity" />
+        <activity android:name=".activities.ResultActivity"  />
     </application>
+
 </manifest>

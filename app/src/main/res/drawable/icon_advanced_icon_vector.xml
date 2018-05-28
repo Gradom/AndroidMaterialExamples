@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="90dp"
+    android:height="90dp"
+    android:viewportHeight="115"
+    android:viewportWidth="115">
+    <path
+        android:fillColor="#64DD17"
+        android:pathData="m3.63816,54.75189l0,0c0,-29.8234 24.17747,-54.00002 54.00186,-54.00002l0,0c14.32217,0 28.05774,5.68927 38.18506,15.81624c10.12735,10.12696 15.81674,23.86209 15.81674,38.18378l0,0c0,29.82337 -24.17739,54 -54.0018,54l0,0c-29.82439,0 -54.00186,-24.17663 -54.00186,-54zm54.00186,-54.00002l0,108.00002m-54.00186,-54" />
+    <group>
+
+        <path
+            android:fillColor="#DDDDDD"
+            android:pathData="M53,90 l11,-60 l-14.3,0 l-10.5,60z M78,90 l11,-60 l-14,0 l-11,60z" />
+        <path android:pathData="M53,90 l-5,-50 l-0.5,50z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:centerColor="#999999"
+                    android:endColor="#DDDDDD"
+                    android:endX="50"
+                    android:endY="1"
+                    android:startColor="#444444"
+                    android:startX="50"
+                    android:startY="99"
+                    android:type="linear" />
+            </aapt:attr>
+        </path>
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M25,30 l14,60 l14,0 l-14,-60z M50,30 l14,60 l14,0 l-14,-60z" />
+    </group>
+    <group
+        android:name="circleGroup"
+        android:pivotX="57.0"
+        android:pivotY="57.0"
+        android:rotation="0">
+        <path
+            android:name="circlePath"
+            android:pathData="m3.63816,54.75189l0,0c0,-29.8234 24.17747,-54.00002 54.00186,-54.00002l0,0c14.32217,0 28.05774,5.68927 38.18506,15.81624c10.12735,10.12696 15.81674,23.86209 15.81674,38.18378l0,0c0,29.82337 -24.17739,54 -54.0018,54l0,0c-29.82439,0 -54.00186,-24.17663 -54.00186,-54zm54.00186,-54.00002m-54.00186,-54"
+            android:strokeAlpha="1"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="4.0"
+            android:trimPathEnd="0.33" />
+    </group>
+
+</vector>
