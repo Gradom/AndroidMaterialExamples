@@ -24,6 +24,12 @@ public class ChainSpringAnimationFragment extends Fragment {
     int actionBarSize = 0;
     int y;
     int x;
+    SpringAnimation animY;
+    SpringAnimation animX;
+    SpringAnimation anim2X;
+    SpringAnimation anim2Y;
+    SpringAnimation anim3X;
+    SpringAnimation anim3Y;
 
     @Nullable
     @Override
@@ -43,7 +49,40 @@ public class ChainSpringAnimationFragment extends Fragment {
             actionBarSize = (int) styledAttributes.getDimension(0, 0);
             styledAttributes.recycle();
         }
+        animY = new SpringAnimation(spring, DynamicAnimation.Y);
+        animX = new SpringAnimation(spring, DynamicAnimation.X);
+        setSpringHigh(animX);
+        setSpringHigh(animY);
+        anim2X = new SpringAnimation(spring2, DynamicAnimation.X);
+        anim2Y = new SpringAnimation(spring2, DynamicAnimation.Y);
+        setSpringMediaum(anim2X);
+        setSpringMediaum(anim2Y);
+        anim3X = new SpringAnimation(spring3, DynamicAnimation.X);
+        anim3Y = new SpringAnimation(spring3, DynamicAnimation.Y);
+        setSpringLow(anim3X);
+        setSpringLow(anim3Y);
 
+        animX.addUpdateListener(new DynamicAnimation.OnAnimationUpdateListener() {
+            @Override
+            public void onAnimationUpdate(DynamicAnimation animation, float value, float velocity) {
+                anim2X.animateToFinalPosition(value);
+                anim3X.animateToFinalPosition(value);
+            }
+        });
+        animY.addUpdateListener(new DynamicAnimation.OnAnimationUpdateListener() {
+            @Override
+            public void onAnimationUpdate(DynamicAnimation animation, float value, float velocity) {
+                anim2Y.animateToFinalPosition(value+spring2.getHeight());
+                anim3Y.animateToFinalPosition(value+spring2.getHeight());
+            }
+        });
+        animY.addEndListener(new DynamicAnimation.OnAnimationEndListener() {
+            @Override
+            public void onAnimationEnd(DynamicAnimation animation, boolean canceled, float value, float velocity) {
+                anim2Y.animateToFinalPosition(value+spring2.getTop());
+                anim3Y.animateToFinalPosition(value+spring3.getTop());
+            }
+        });
 
         spring.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -54,56 +93,31 @@ public class ChainSpringAnimationFragment extends Fragment {
                 int action = motionEvent.getAction();
                 switch (action) {
                     case MotionEvent.ACTION_MOVE:
-                        SpringAnimation anim = new SpringAnimation(view, DynamicAnimation.Y);
-                        SpringAnimation animX = new SpringAnimation(view, DynamicAnimation.X);
-                        anim.setSpring(new SpringForce());
-                        anim.getSpring().setStiffness(SpringForce.STIFFNESS_LOW);
-                        anim.getSpring().setDampingRatio(SpringForce.DAMPING_RATIO_HIGH_BOUNCY);
-
-                        animX.setSpring(new SpringForce());
-                        animX.getSpring().setStiffness(SpringForce.STIFFNESS_LOW);
-                        animX.getSpring().setDampingRatio(SpringForce.DAMPING_RATIO_HIGH_BOUNCY);
-                        anim.addUpdateListener(new DynamicAnimation.OnAnimationUpdateListener() {
-                            @Override
-                            public void onAnimationUpdate(DynamicAnimation animation, float value, float velocity) {
-                                SpringAnimation anim2 = new SpringAnimation(spring2, DynamicAnimation.Y);
-//                                anim2.setStartVelocity(1000);
-                                anim2.setSpring(new SpringForce());
-                                anim2.getSpring().setStiffness(SpringForce.STIFFNESS_LOW);
-                                anim2.getSpring().setDampingRatio(SpringForce.DAMPING_RATIO_HIGH_BOUNCY);
-
-                                SpringAnimation anim2X = new SpringAnimation(spring2, DynamicAnimation.X);
-//                        anim2X.setStartVelocity(1000);
-                                anim2X.setSpring(new SpringForce());
-                                anim2X.getSpring().setStiffness(SpringForce.STIFFNESS_LOW);
-                                anim2X.getSpring().setDampingRatio(SpringForce.DAMPING_RATIO_HIGH_BOUNCY);
-
-
-//                        SpringAnimation anim3 = new SpringAnimation(spring3, DynamicAnimation.Y).setStartVelocity(1000);
-//                        anim3.getSpring().setStiffness(SpringForce.STIFFNESS_LOW);
-//                        anim3.getSpring().setDampingRatio(SpringForce.DAMPING_RATIO_HIGH_BOUNCY);
-                                anim2.animateToFinalPosition(delta + spring2.getTop());
-                                anim2X.animateToFinalPosition(x);
-//                        anim3.animateToFinalPosition(delta);
-                            }
-                        });
-                        anim.animateToFinalPosition(delta);
                         animX.animateToFinalPosition(x);
-
-//                        view.setY(delta);
-//                        view.setX(x);
-
-                        break;
-                    case MotionEvent.ACTION_UP:
-//                        SpringAnimation anim = new SpringAnimation(view, DynamicAnimation.TRANSLATION_Y, 0).setStartVelocity(1000);
-//                        anim.getSpring().setStiffness(SpringForce.STIFFNESS_LOW);
-//                        anim.getSpring().setDampingRatio(SpringForce.DAMPING_RATIO_HIGH_BOUNCY);
-//                        anim.start();
+                        animY.animateToFinalPosition(delta);
                         break;
                 }
                 view.invalidate();
                 return true;
             }
         });
+    }
+
+    private void setSpringHigh(SpringAnimation anim) {
+        anim.setSpring(new SpringForce());
+     //   anim.getSpring().setStiffness(SpringForce.STIFFNESS_LOW);
+        anim.getSpring().setDampingRatio(SpringForce.DAMPING_RATIO_NO_BOUNCY);
+    }
+
+    private void setSpringMediaum(SpringAnimation anim) {
+        anim.setSpring(new SpringForce());
+        anim.getSpring().setStiffness(SpringForce.STIFFNESS_LOW);
+        anim.getSpring().setDampingRatio(SpringForce.DAMPING_RATIO_HIGH_BOUNCY);
+    }
+
+    private void setSpringLow(SpringAnimation anim) {
+        anim.setSpring(new SpringForce());
+        anim.getSpring().setStiffness(SpringForce.STIFFNESS_LOW);
+        anim.getSpring().setDampingRatio(SpringForce.DAMPING_RATIO_MEDIUM_BOUNCY);
     }
 }

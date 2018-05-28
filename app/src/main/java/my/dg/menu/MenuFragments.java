@@ -19,6 +19,7 @@ import my.dg.fragments.CurvedMotionFragment;
 import my.dg.fragments.DialogInputSnackBarFragment;
 import my.dg.fragments.EditTextTransitionFargment;
 import my.dg.fragments.IconAnimationFragment;
+import my.dg.fragments.IconShapeMorphFragment;
 import my.dg.fragments.IntroFragment;
 import my.dg.fragments.ParallaxFragment;
 import my.dg.fragments.SpringAnimationFragment;
@@ -60,6 +61,7 @@ public class MenuFragments {
         fragmentsList.add(new MenuItem("Advanced animation icon loading", new AnimatedIconAdvancedFragment()));
         fragmentsList.add(new MenuItem("Spring animation", new SpringAnimationFragment()));
         fragmentsList.add(new MenuItem("Spring chain animation", new ChainSpringAnimationFragment()));
+        fragmentsList.add(new MenuItem("Icon shape morph", new IconShapeMorphFragment()));
     }
 
     public List<MenuItem> getAllMenuItems() {
